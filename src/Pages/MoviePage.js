@@ -14,10 +14,10 @@ const MoviePage = (props) => {
     return (
         <div>
             <h1>Movie Page</h1>
-            <h2>{foundMovie.Title}</h2>
-            <p>{foundMovie.Director}</p>
-            <p>{foundMovie.Actors}</p>
-            <p>{foundMovie.Plot}</p>
+            <h2>Title: {foundMovie.Title}</h2>
+            <p>Director: {foundMovie.Director}</p>
+            <p>Actors: {foundMovie.Actors}</p>
+            <p>Plot: {foundMovie.Plot}</p>
         </div>
     )
 };
