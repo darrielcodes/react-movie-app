@@ -2,15 +2,16 @@ import MovieSidebar from "../Components/MovieSidebar"
 import { Outlet } from "react-router-dom"
 
 
-const MovieLayout = () => {
-    return(
+const MovieLayout = (props) => {
+    const {movieList} = props;
+    return( 
         <div className="movie-layout">
-        <MovieSidebar />
+        <MovieSidebar movieList={movieList}/>
         <div className="movie-content">
             <Outlet />
         </div>
-        </div>
+    </div>
     )
-    };
+};
     
     export default MovieLayout
